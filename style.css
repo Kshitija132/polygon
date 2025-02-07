@@ -1,0 +1,66 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Button Container */
+#buttonContainer {
+    position: absolute;
+    bottom: 20px; /* Position the container at the bottom */
+    left: 50%; /* Center the container horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 10; /* Ensure buttons appear above the canvas */
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Button Active Effect */
+button:active {
+    background-color: #004494;
+    transform: scale(0.98);
+}
+
+/* Reset Button Specific Style */
+button#reset {
+    background-color: #dc3545;
+}
+
+button#reset:hover {
+    background-color: #b02a37;
+}
+
+button#reset:active {
+    background-color: #842029;
+}
+
+/* Canvas Adjustments */
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
